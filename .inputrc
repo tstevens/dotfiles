@@ -1,0 +1,36 @@
+# use ctrl-x ctrl-r to reload this file!
+
+set completion-ignore-case on
+set completion-map-case on
+set show-all-if-ambiguous on
+set visible-stats on
+set match-hidden-files off
+set mark-symlinked-directories on
+set bell-style none
+
+set expand-tilde off
+set skip-completed-text on
+
+set blink-matching-paren on
+
+# # foward and reverse tab / shift-tab
+# # TAB: menu-complete
+# # "\e[Z": "\e-1\C-i"
+# option left right arrows
+"\ef": menu-complete
+"\eb": menu-complete-backward
+
+
+"\e[A": history-search-backward
+"\e[B": history-search-forward
+
+
+# Be 8bit clean
+# set input-meta on
+# set output-meta on
+# set convert-meta off
+
+# space after !^ - first arg of prev command !$ last arg of prev command or !* for all args / !:2 for a specific arg number
+$if Bash
+    Space: magic-space
+$endif
