@@ -33,6 +33,9 @@ export LSCOLORS=dxfxcxdxbxegedabagacad
 export GREP_OPTIONS='--color=auto'
 export GREP_COLOR='1;35'
 
+# http://stackoverflow.com/questions/1790827/problem-with-ants-ansicolorlogger-in-snow-leopard
+ant () { command ant  -logger org.apache.tools.ant.listener.AnsiColorLogger "$@" | perl -pe 's/(?<=\e\[)2;//g' ; }
+
 # Aliases
 if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
