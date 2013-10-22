@@ -1,6 +1,10 @@
 # Additions to Path
 export PATH=/usr/local/bin:/usr/local/sbin:$PATH:/opt/bin
 
+#Add vmware tools: vmrun vmnet-sniffer ovftool etc
+#:/Applications/VMware\ Fusion.app/Contents/Library/VMware\ OVF\ Tool
+export PATH=$PATH:/Applications/VMware\ Fusion.app/Contents/Library
+
 #export PATH=$PATH:$HOME/bin
 
 # Mysql DB
