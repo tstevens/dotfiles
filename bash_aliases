@@ -3,6 +3,7 @@ alias zm='zless'
 alias mv="mv -i"
 alias cp="cp -i"
 alias diff=colordiff
+alias rm="rm -i"
 
 alias m="less"
 alias qu="quota -v"
