@@ -1,0 +1,43 @@
+[core]
+	autocrlf = input
+	editor = mate -w
+	excludesfile = ~/.gitignore
+[git-tmbundle]
+	gitx-path = /usr/local/bin/gitx
+[include]
+	path = ~/.gitcredentials
+[apply]
+	whitespace = fix
+[color]
+	ui = true
+[credential]
+	helper = osxkeychain
+[push]
+	default = matching
+[rerere]
+	enabled = true
+[branch]
+	autosetupmerge = true
+[alias]
+	ff = pull --ff-only
+	conflicts = diff --name-only --diff-filter=U
+	fixup = !sh -c 'git commit --fixup=$1' -
+	squash = !sh -c 'git commit --squash=$1' -
+	ri = rebase --interactive --autosquash
+[diff]
+	tool = Kaleidoscope
+	renames = copies
+	mnemonicprefix = true
+[difftool]
+	prompt = false
+[mergetool]
+	prompt = false
+	keepBackup = false
+[merge]
+	tool = Kaleidoscope
+	stat = true
+[difftool "Kaleidoscope"]
+	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
+[mergetool "Kaleidoscope"]
+	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
+	trustExitCode = true
