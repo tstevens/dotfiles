@@ -2,11 +2,15 @@ alias l='ls -l'
 alias zm='zless'
 alias mv="mv -i"
 alias cp="cp -i"
+alias diff=colordiff
 
 alias m="less"
 alias qu="quota -v"
 
 alias d="dirs"
+# alias up='cd $cwd:h ; pwd'
+# alias ul='cd $cwd:h ; pwd; ls'
+# alias cl='cd \!\!*; pwd ; ls'
 
 alias slay="kill -9"
 alias compress="compress -v"

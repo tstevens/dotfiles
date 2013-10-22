@@ -9,7 +9,8 @@ export HISTIGNORE="exit:clear:pwd"
 export HISTFILESIZE=9000
 shopt -s histappend
 shopt -s cdspell
-PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"
+# PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"
+PROMPT_COMMAND="history -a; history -n; $PROMPT_COMMAND"
 
 # Paths and Editor
 if [ -f /usr/local/bin/mate ]; then
@@ -33,6 +34,10 @@ export LSCOLORS=dxfxcxdxbxegedabagacad
 export GREP_OPTIONS='--color=auto'
 export GREP_COLOR='1;35'
 
+# ant colored output
+# export ANT_ARGS='-logger org.apache.tools.ant.listener.AnsiColorLogger'
+export ANT_OPTS="-Dbuild.compiler=org.eclipse.jdt.core.JDTCompilerAdapter"
+# export ANT_OPTS="-Dant.logger.defaults=${HOME}/.antopts"
 # http://stackoverflow.com/questions/1790827/problem-with-ants-ansicolorlogger-in-snow-leopard
 ant () { command ant  -logger org.apache.tools.ant.listener.AnsiColorLogger "$@" | perl -pe 's/(?<=\e\[)2;//g' ; }
 
@@ -60,6 +65,9 @@ fi
 if [ -f /usr/local/etc/autojump.sh ]; then
     . /usr/local/etc/autojump.sh
 fi
+
+# Load Cloud development environment
+# . /opt/cloud/env
 
 function size() { du -sh "$@" ;}
 
