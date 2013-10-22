@@ -5,6 +5,8 @@ export PATH=/usr/local/bin:/usr/local/sbin:$PATH:/opt/bin
 #:/Applications/VMware\ Fusion.app/Contents/Library/VMware\ OVF\ Tool
 export PATH=$PATH:/Applications/VMware\ Fusion.app/Contents/Library
 
+export PATH=$PATH:/opt/bin
+
 #export PATH=$PATH:$HOME/bin
 
 # Mysql DB
