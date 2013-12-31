@@ -1,17 +1,20 @@
 # Additions to Path
-export PATH=/usr/local/bin:/usr/local/sbin:$PATH:/opt/bin
+export PATH=/usr/local/bin:/usr/local/sbin:$PATH
 
 #Add vmware tools: vmrun vmnet-sniffer ovftool etc
 #:/Applications/VMware\ Fusion.app/Contents/Library/VMware\ OVF\ Tool
-export PATH=$PATH:/Applications/VMware\ Fusion.app/Contents/Library
+#export PATH=$PATH:/Applications/VMware\ Fusion.app/Contents/Library
+export PATH=$PATH:/opt/vmware/bin
 
-export PATH=$PATH:/opt/bin
+#Additions from opt
+#export PATH=$PATH:/opt/bin
 
 #export PATH=$PATH:$HOME/bin
 
-# Mysql DB
-export PATH=$PATH:/usr/local/mysql/bin
-export MANPATH=$MANPATH:/usr/local/mysql/man
+# Mysql DB -- added to /etc/paths.d/ & /etc/manpaths.d/
+#export PATH=$PATH:/usr/local/mysql/bin
+#export MANPATH=$MANPATH:/usr/local/mysql/man
+
 
 # Oracle Instant Client
 # export ORACLE_HOME=/opt/oracle/instantclient_10_2-32bit
