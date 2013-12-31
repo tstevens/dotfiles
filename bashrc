@@ -33,7 +33,7 @@ if [ -f /usr/bin/less ]; then
     export PAGER="/usr/bin/less"
 fi
 
-set -o noclobber # prevent overwriting files -- user |> to ignore for a single operation
+set -o noclobber # prevent overwriting files -- use |> to ignore for a single operation
 # set -o ignoreeof # stops ctrl+d from logging out
 
 # ls colored output for dark backgrounds
