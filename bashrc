@@ -76,6 +76,11 @@ if [ -f /usr/local/etc/autojump.sh ]; then
     . /usr/local/etc/autojump.sh
 fi
 
+#GPG pin entry ssh http://support.gpgtools.org/kb/faq/how-to-enter-your-passphrase-directly-in-the-terminal
+if test "$SSH_CONNECTION" != ""; then
+     export PINENTRY_USER_DATA="USE_CURSES=1"
+fi
+
 
 function size() { du -sh "$@" ;}
 
