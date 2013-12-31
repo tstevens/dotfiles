@@ -76,8 +76,6 @@ if [ -f /usr/local/etc/autojump.sh ]; then
     . /usr/local/etc/autojump.sh
 fi
 
-# Load Cloud development environment
-# . /opt/cloud/env
 
 function size() { du -sh "$@" ;}
 
