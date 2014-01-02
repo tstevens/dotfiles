@@ -2,6 +2,7 @@
 	autocrlf = input
 	editor = mate -w
 	excludesfile = ~/.gitignore
+	attributesfile = ~/.gitattributes
 [git-tmbundle]
 	gitx-path = /usr/local/bin/gitx
 [include]

@@ -1,0 +1,10 @@
+# partially taken from http://stackoverflow.com/questions/170961/whats-the-best-crlf-handling-strategy-with-git
+
+#*        text=auto
+
+#*.cs     text diff=csharp
+#*.java   text diff=java
+#*.html   text diff=html
+#*.css    text
+#*.js     text
+#*.sql    text
