@@ -23,7 +23,9 @@ shopt -s cdspell
 PROMPT_COMMAND="history -a; history -n; $PROMPT_COMMAND"
 
 # Paths and Editor
-if [ -f /usr/local/bin/mate ]; then
+if test "$SSH_CONNECTION" != ""; then
+    export EDITOR="/usr/bin/vim"
+elif [ -f /usr/local/bin/mate ]; then
     export EDITOR="/usr/local/bin/mate -w"
 else
     export EDITOR="/usr/bin/vim"
