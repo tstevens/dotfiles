@@ -45,11 +45,9 @@ export GREP_OPTIONS='--color=auto'
 export GREP_COLOR='1;35'
 
 # ant colored output
-# export ANT_ARGS='-logger org.apache.tools.ant.listener.AnsiColorLogger'
-export ANT_OPTS="-Dbuild.compiler=org.eclipse.jdt.core.JDTCompilerAdapter"
-# export ANT_OPTS="-Dant.logger.defaults=${HOME}/.antopts"
 # http://stackoverflow.com/questions/1790827/problem-with-ants-ansicolorlogger-in-snow-leopard
-ant () { command ant  -logger org.apache.tools.ant.listener.AnsiColorLogger "$@" | perl -pe 's/(?<=\e\[)2;//g' ; }
+export ANT_ARGS='-logger org.apache.tools.ant.listener.AnsiColorLogger'
+export ANT_OPTS="-Dbuild.compiler=org.eclipse.jdt.core.JDTCompilerAdapter -Dant.logger.defaults=${HOME}/.antcolors"
 
 # Aliases
 if [ -f ~/.bash_aliases ]; then

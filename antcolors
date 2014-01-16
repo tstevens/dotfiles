@@ -1,0 +1,11 @@
+# AnsiColorLogger.ERROR_COLOR=0;31
+# AnsiColorLogger.WARNING_COLOR=0;34
+# AnsiColorLogger.INFO_COLOR=0;37
+# AnsiColorLogger.VERBOSE_COLOR=0;35
+# AnsiColorLogger.DEBUG_COLOR=0;33
+
+AnsiColorLogger.ERROR_COLOR=31
+AnsiColorLogger.WARNING_COLOR=34
+AnsiColorLogger.INFO_COLOR=37
+AnsiColorLogger.VERBOSE_COLOR=35
+AnsiColorLogger.DEBUG_COLOR=33
