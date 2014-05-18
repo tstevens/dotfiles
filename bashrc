@@ -6,6 +6,11 @@ fi
 # Additions to Path
 export PATH=/usr/local/bin:/usr/local/sbin:$PATH
 
+#Add vmware tools: vmrun vmnet-sniffer ovftool etc
+if [ -f /opt/vmware/vm ]; then
+    . /opt/vmware/vm
+fi
+
 # Moved from bash_profile.. dont need this unless interactive
 # Add xcode developer tools perl libraries to perl path
 # required for git-svn to find perl svn libraries
@@ -25,6 +30,8 @@ shopt -s histappend
 shopt -s cdspell
 # PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"
 PROMPT_COMMAND="history -a; history -n; $PROMPT_COMMAND"
+
+#export PATH=$PATH:/opt/vmdk/bin
 
 # Paths and Editor
 if test "$SSH_CONNECTION" != ""; then
