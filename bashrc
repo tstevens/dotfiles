@@ -8,10 +8,11 @@ fi
 # required for git-svn to find perl svn libraries
 # http://lifeandcode.net/2012/02/using-git-svn-on-os-x-10-8-developer-preview/
 # http://blog.victorquinn.com/fix-git-svn-in-mountain-lion
-XCODE_CLI_TOOLS=$(xcode-select --print-path)
-PERL_VERSION=$(perl -e 'print "$^V";' | sed -e '1s/^.//' | sed 's/\(.*\)../\1/')
-PERL_ARCH=$(perl -V:archname | awk -F\' '{c[$2]++} END{for (w in c) print w}')
-export PERL5LIB=$XCODE_CLI_TOOLS/Library/Perl/$PERL_VERSION/$PERL_ARCH
+#XCODE_CLI_TOOLS=$(xcode-select --print-path)
+# PERL_VERSION=$(perl -e 'print "$^V";' | sed -e '1s/^.//' | sed 's/\(.*\)../\1/')
+# PERL_ARCH=$(perl -V:archname | awk -F\' '{c[$2]++} END{for (w in c) print w}')
+# export PERL5LIB=$XCODE_CLI_TOOLS/Library/Perl/$PERL_VERSION/$PERL_ARCH
+#export PERL5LIB=$XCODE_CLI_TOOLS/Library/Perl/5.16/darwin-thread-multi-2level
 
 # History control
 export HISTCONTROL=ignoreboth:erasedups
