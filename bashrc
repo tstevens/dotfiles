@@ -3,6 +3,9 @@ if [ -z "$PS1" ]; then
    return
 fi
 
+# Additions to Path
+export PATH=/usr/local/bin:/usr/local/sbin:$PATH
+
 # Moved from bash_profile.. dont need this unless interactive
 # Add xcode developer tools perl libraries to perl path
 # required for git-svn to find perl svn libraries
