@@ -76,9 +76,9 @@ if [ -f /usr/local/etc/bash_completion ]; then
     PS1='\h:\W$(__git_ps1 " (%s)") \u\$ '
 fi
 
-if [ -f /usr/local/etc/autojump.sh ]; then
-    . /usr/local/etc/autojump.sh
-fi
+# if [ -f /usr/local/etc/autojump.sh ]; then
+#     . /usr/local/etc/autojump.sh
+# fi
 
 #GPG pin entry ssh http://support.gpgtools.org/kb/faq/how-to-enter-your-passphrase-directly-in-the-terminal
 if test "$SSH_CONNECTION" != ""; then
