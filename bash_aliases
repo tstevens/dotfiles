@@ -27,7 +27,10 @@ alias showdns='scutil --dns'
 
 alias showroutes='netstat -rn'
 
-alias flushdns='dscacheutil -flushcache'
+#http://support.apple.com/kb/HT5343
+#sudo killall -HUP mDNSResponder
+#alias flushdns='dscacheutil -flushcache'
+alias flushdns='sudo killall -HUP mDNSResponder'
 
 #less tail ^C to interrupt tailing and resume with shift-f
 alias lt='less +F'
