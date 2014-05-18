@@ -44,3 +44,5 @@ alias lt='less +F'
 #http://www.michaelkummer.com/2012/08/05/securing-apples-filevault-2-full-disk-encryption/
 alias fvdelkey='sudo pmset -a destroyfvkeyonstandby 1 hibernatemode 25'
 alias fvretainkey='sudo pmset -a destroyfvkeyonstandby 0 hibernatemode 3'
+
+alias removehost='ssh-keygen -R'
