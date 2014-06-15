@@ -58,7 +58,7 @@ export GREP_OPTIONS='--color=auto'
 export GREP_COLOR='1;35'
 
 # JAVA_HOME http://stackoverflow.com/questions/1348842/what-should-i-set-java-home-to-on-osx
-export JAVA_HOME=$(/usr/libexec/java_home)
+# export JAVA_HOME=$(/usr/libexec/java_home)
 
 # ant colored output
 # http://stackoverflow.com/questions/1790827/problem-with-ants-ansicolorlogger-in-snow-leopard

@@ -1,0 +1,5 @@
+#https://github.com/openworm/org.geppetto/wiki/OSX-Linux-setup-instructions-(IDE-agnostic)
+
+export MVN_HOME="$(brew --prefix maven)/libexec"
+
+export JAVA_HOME="$(/usr/libexec/java_home)"
