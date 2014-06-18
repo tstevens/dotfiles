@@ -20,7 +20,6 @@
 [branch]
 	autosetupmerge = true
 [alias]
-	ff = pull --ff-only
 	conflicts = diff --name-only --diff-filter=U
 	fixup = !sh -c 'git commit --fixup=$1' -
 	squash = !sh -c 'git commit --squash=$1' -
@@ -42,3 +41,5 @@
 [mergetool "Kaleidoscope"]
 	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
 	trustExitCode = true
+[pull]
+	ff = true
